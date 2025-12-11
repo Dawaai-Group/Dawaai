@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <script src="JS/auth-check.js"></script>
+
+<meta charset="UTF-8">
+<title>الدواء</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>لوحة المريض</h2>
+    <a href="patient-dashboard.html">🏠 الرئيسية</a>
+
+    <div id="medicines-list">
+        <a>💊 لا توجد أدوية بعد</a>
+    </div>
+</div>
+
+<!-- المحتوى -->
+<div class="content">
+
+    <h1 id="medName"></h1>
+    <p id="medDesc"></p>
+
+    <h3>فيديو تعريفي للدواء:</h3>
+    <p>قادم قريبًا..</p>
+    <p id="medVid"></p>
+
+    <h3>طريقة الاستخدام:</h3>
+    <p id="medUsage"></p>
+
+    <h3>عدد مرات الجرعة:</h3>
+    <p id="medDose"></p>
+
+<div style="display:flex; gap:10px;">
+    <h3>متى تريد أخذ أول جرعة؟</h3>
+    <select id="firstDoseHour">
+        <option value="">ساعة...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+
+    <select id="firstDoseMinute">
+    <option value="">دقيقة...</option>
+        <option>00</option>
+        <option>05</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
+        <option>35</option>
+        <option>40</option>
+        <option>45</option>
+        <option>50</option>
+        <option>55</option>
+    </select>
+
+    <select id="firstDosePeriod">
+        <option value="">اختر...</option>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+    </select>
+
+    <button id="setFirstDoseBtn">تأكيد أول جرعة</button>
+</div>
+
+
+    <h3 id="questionsHeader">أسئلة مهمة:</h3>
+    <ul id="medQuestions"></ul>
+
+    <form id="questionsForm">
+        <button type="submit">احسب النقاط</button>
+    </form>
+
+    <p id="finalScore"></p>
+
+    <h3>موانع استعمال الدواء:</h3>
+    <p id="medcontraindications"></p>
+</div>
+
+
+
+<div id="doctorChatContainer"></div>
+
+<!-- سكربت تحميل القائمة أولاً -->
+<script src="patient-medicine-list.js"></script>
+
+<!-- سكربت صفحة الدواء -->
+<script src="patient-prescription.js"></script>
+
+<script src="chat-popup.js"></script>
+
+</body>
+</html>

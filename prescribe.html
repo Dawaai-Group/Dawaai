@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <script src="JS/auth-check.js"></script>
+  
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style2.css">
+<title>صرف دواء</title>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>لوحة الطبيب</h2>
+    <a href="doctor-dashboard.html">🏠 الرئيسية</a>
+    <a href="prescribe.html">💊 صرف دواء</a>
+    <a href="review-prescription.html">👁️ مراجعة المريض</a>
+</div>
+
+<div class="content">
+    <h1>💊 صرف دواء</h1>
+
+    <div class="form-card">
+
+        <!-- اختيار المريض -->
+        <label>اسم المريض</label>
+        <select id="patientSelect">
+            <option value="">اختر المريض...</option>
+        </select>
+
+        <!-- اختيار الدواء -->
+        <label>اسم الدواء</label>
+        <select id="medicineSelect">
+            <option value="">اختر الدواء...</option>
+        </select>
+
+        <!-- عدد مرات أخذ الجرعة -->
+        <label>عدد مرات أخذ الدواء في اليوم الواحد</label>
+        <select id="doseTimes">
+            <option value="">اختر...</option>
+            <option value="1">مرة واحدة</option>
+            <option value="2">مرتين</option>
+            <option value="3">ثلاث مرات</option>
+        </select>
+
+        <label>مدة استخدام الدواء</label>
+<select id="durationSelect">
+    <option value="">اختر...</option>
+    <option value="7">أسبوع</option>
+    <option value="14">أسبوعين</option>
+    <option value="30">شهر</option>
+    <option value="60">شهرين</option>
+    <option value="90">3 أشهر</option>
+</select>
+
+
+        <button id="savePrescriptionBtn" class="btn-primary">إرسال</button>
+    </div>
+</div>
+
+
+<script src="meds.js"></script>
+<script src="pharmacy.js"></script>
+
+</body>
+</html>

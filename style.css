@@ -1,0 +1,91 @@
+/* ===== Body & center ===== */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ===== Header / Navbar ===== */
+header, .navbar {
+    background-color: #00796b; /* أخضر صحتي */
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 88%;
+}
+
+/* ===== Form card ===== */
+.form-card, .container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px auto;
+    width: 88%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: right;
+}
+
+/* ===== Buttons ===== */
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+button:hover { background-color: #00695c; }
+
+/* ===== Inputs ===== */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* ===== Pages ===== */
+.page { display: none; padding-top: 15px; }
+.page.active { display: block; }
+
+/* ===== Small text / links ===== */
+.small-text { font-size: 14px; text-align: center; margin-top: 12px; }
+.small-text a { color: #00796b; text-decoration: none; }
+.small-text a:hover { text-decoration: underline; }
+
+/* ===== Body center ===== */
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* أفقياً في الوسط */
+    align-items: center;    /* رأسياً في الوسط */
+    min-height: 100vh;      /* تغطي ارتفاع الشاشة */
+    direction: rtl;
+}
+
+/* ===== Card الوصفة ===== */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px; /* يمكن تغييره حسب الحاجة */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: right;
+}

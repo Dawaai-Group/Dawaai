@@ -1,0 +1,93 @@
+/* خلفية الصفحة */
+body {
+    margin: 0;
+    font-family: "Tajawal", sans-serif;
+    background: #f2f5f7;
+}
+
+/* الشريط الجانبي */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #0b6c63; /* اللون التكوازي */
+    position: fixed;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* الروابط */
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    transition: 0.2s;
+    font-size: 17px;
+}
+
+.sidebar a:hover {
+    background: #0e857a;
+}
+
+/* منطقة المحتوى */
+.content {
+    margin-right: 260px;
+    padding: 40px;
+}
+
+/* صندوق النموذج */
+.form-card {
+    background: white;
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-card label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 16px;
+}
+
+.form-card input,
+.form-card textarea,
+.form-card select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* الأزرار */
+.btn-primary {
+    background: #0b6c63;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background: #0e857a;
+}

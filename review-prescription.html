@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style2.css">
+<title>مراجعة المريض - الجرعات</title>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>لوحة الطبيب</h2>
+    <a href="doctor-dashboard.html">🏠 الرئيسية</a>
+    <a href="prescribe.html">💊 صرف دواء</a>
+    <a href="review-prescription.html">👁️ مراجعة المريض</a>
+</div>
+
+<div class="content">
+    <h1>👁️ مراجعة الجرعات</h1>
+
+    <div class="form-card">
+        <label>اسم المريض</label>
+        <select id="patientSelect">
+            <option value="">اختر المريض...</option>
+        </select>
+
+        <label>الأدوية التي صرفت للمريض</label>
+        <select id="medicineSelect" disabled>
+            <option value="">اختر الدواء...</option>
+        </select>
+
+        <button id="showPrescriptionBtn" class="btn-primary" disabled>عرض الجدول</button>
+    </div>
+
+    <div id="prescriptionTableContainer" class="form-card" style="display:none;">
+        <h2>جدول الجرعات</h2>
+        <div id="medSchedule"></div>
+    </div>
+
+</div>
+
+<script src="meds.js"></script>
+<script src="review-prescription.js"></script>
+
+</body>
+</html>

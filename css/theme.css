@@ -1,0 +1,49 @@
+/* theme.css - ثيم مشابه لمنصة صحتي */
+:root{
+  --primary:#00897b;
+  --primary-dark:#00796b;
+  --muted:#f4f6f9;
+  --card-bg:#ffffff;
+  --radius:10px;
+}
+*{box-sizing:border-box}
+body{
+  font-family: "Tahoma", "Noto Sans Arabic", Arial, sans-serif;
+  background:var(--muted);
+  margin:0; padding:0; direction:rtl;
+  color:#222;
+}
+.header{
+  background:var(--primary);
+  color:#fff;
+  padding:18px 12px;
+  text-align:center;
+  font-size:20px;
+  font-weight:700;
+}
+.container{
+  max-width:980px;
+  margin:28px auto;
+  padding:16px;
+}
+.card{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  padding:18px;
+  margin-bottom:14px;
+}
+.form-row{ display:flex; gap:12px; flex-wrap:wrap; }
+label{ display:block; margin:8px 0 6px; font-size:14px; }
+input, select, textarea, button{
+  font-size:14px; padding:10px; border-radius:8px; border:1px solid #ddd; width:100%;
+}
+button{ background:var(--primary); color:#fff; border:none; cursor:pointer; }
+button.secondary{ background:#fff; color:var(--primary); border:1px solid var(--primary); }
+.nav{ display:flex; gap:8px; background:var(--primary); padding:10px; border-radius:8px; }
+.nav a{ color:#fff; text-decoration:none; padding:6px 10px; display:inline-block; }
+.small{ font-size:13px; color:#666; }
+.hidden{ display:none !important; }
+.med-card{ border:1px dashed #e6e6e6; padding:12px; border-radius:8px; margin-bottom:8px; background:#fff; }
+.right{ text-align:right; }
+.left{ text-align:left; }
